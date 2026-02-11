@@ -1,0 +1,139 @@
+.p1
+{
+    background-color: red;
+}
+.popup1
+{
+    align-items: center;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0,0,0,0.3);
+    inset: 0;
+
+}
+#addStudents
+{
+    align-items: center;
+    background-color: mediumseagreen;
+    padding: 20px;
+    width: 400px;
+  border-radius: 20px;
+position: relative;
+}
+
+#removeStudents2
+{
+    display: none;
+}
+#addStudents2
+{
+    display: none;
+    
+}
+#editStudents2
+{
+    display: none;
+  
+}
+
+#removeStudents
+{
+    position: relative;
+    background-color: tomato;
+    padding: 20px;
+    width: 400px;
+    border-radius: 20px;
+}
+#editStudents
+{
+    position: relative;
+    background-color: mediumseagreen;
+    padding: 20px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+#students
+{
+    width: 500px;
+}
+
+#pass {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+#result
+{
+    background: white;
+    padding: 25px;
+    width: 500px;
+    inset: 0;
+    border-radius: 10px;
+    
+    text-align: center;
+}
+
+
+.overlay
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+    
+}
+
+
+  .popup {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+  }
+.white
+{
+    color: white;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.close-btn {
+    color: white;
+   position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+    
+     font-size: 14px;
+}
+
+.sticky-button {
+    display: flex;
+    position: fixed;
+    justify-content: center; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+}
