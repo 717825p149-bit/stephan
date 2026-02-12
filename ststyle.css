@@ -64,7 +64,7 @@ position: relative;
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgb(194, 194, 194 , 9);
     justify-content: center;
     align-items: center;
     z-index: 2;
