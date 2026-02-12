@@ -2,6 +2,8 @@ var id = 1;
 var to = [[0,"-" , 0],[0,"-" , 0],[0,"-" , 0]];
 
 
+
+
 function addV(set)
 {
     if(set == 1){
@@ -42,12 +44,21 @@ function openPass() {
     document.getElementById("pass").style.display = "flex";
   }
 
-function checkPass()
+  function openAdmin()
+  {
+    window.location.href = "stindex.html";
+  }
+
+function checkPass(Event)
 {
+    Event.preventDefault();
     if(document.getElementById("password1").value == "12345")
     {
-        window.location.href = "stindex.html";
-        
+       // window.location.href = "stindex.html";
+        //isUnlocked = true;
+        document.getElementById("password1").value = "";
+        document.getElementById("pass").style.display = "none";
+        loadTable2();
     }
 
     else
@@ -58,7 +69,8 @@ function checkPass()
 }
 
   function closePass() {
-    document.getElementById("pass").style.display = "none";
+    //document.getElementById("pass").style.display = "none";
+    window.location.href = "index.html";
   }
 
 
@@ -182,6 +194,14 @@ function add(Event)
 
 }
 function loadTable() {
+
+
+    openPass();
+  
+}
+
+function loadTable2()
+{
   const table = document.getElementById("students");
   //const data = JSON.parse(localStorage.getItem("studentsData"));
 
@@ -200,8 +220,6 @@ fetch("https://api.jsonbin.io/v3/b/698c3a05ae596e708f21f44b").then(res => res.js
   calResult();
   // use data HERE
 });
-
-  
 }
 
 function remove(Event)
